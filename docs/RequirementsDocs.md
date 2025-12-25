@@ -196,4 +196,62 @@ This document specifies the complete requirements for the AI-enabled loan automa
 | NFR-041 | Accessibility compliance | WCAG 2.1 Level AA | Accessibility audit | Should Have |
 | NFR-042 | Browser compatibility | Chrome, Firefox, Edge, Safari (latest 2 versions) | Cross-browser testing | Must Have |
 | NFR-043 | Mobile responsiveness | Support tablets (iPad, Android) | Responsive design testing | Should Have |
-| NFR-044 | Training time for
+| NFR-044 | Training time for loan officers | <4 hours to proficiency | Training feedback | Must Have |
+
+### 4.6 Compliance Requirements
+# 4.6 Compliance Requirements
+
+The platform must adhere to strict regulatory, audit, and reporting standards across lending, privacy, financial reporting, and data governance.
+
+## Compliance Requirements
+
+| Req ID   | Requirement                     | Regulation                     | Verification                         | Priority |
+|----------|----------------------------------|--------------------------------|---------------------------------------|----------|
+| **NFR-050** | **Fair lending compliance** | CFPB, ECOA | Disparate impact testing | Must Have |
+| **NFR-051** | **Data privacy compliance** | GLBA, state privacy laws | Privacy impact assessment | Must Have |
+| **NFR-052** | **SOX compliance for financial reporting** | Sarbanes-Oxley | SOX controls testing | Must Have |
+| **NFR-053** | **HMDA reporting capability** | CFPB HMDA | Generate HMDA LAR file | Must Have |
+| **NFR-054** | **Audit trail completeness** | Various regulations | AuditLog completeness review | Must Have |
+
+---
+
+## 5. Technical Requirements
+
+### 5.1 Platform Requirements
+
+| Req ID   | Requirement           | Specification                                   | Priority |
+|----------|------------------------|--------------------------------------------------|----------|
+| **TR-001** | **Cloud platform** | Microsoft Azure | Must Have |
+| **TR-002** | **Database** | Azure SQL Database (Business Critical tier) | Must Have |
+| **TR-003** | **AI/ML platform** | Azure Machine Learning | Must Have |
+| **TR-004** | **Application runtime** | .NET 6, Python 3.10+ | Must Have |
+| **TR-005** | **Frontend framework** | React 18+ | Must Have |
+| **TR-006** | **API standard** | REST, OpenAPI 3.0 | Must Have |
+| **TR-007** | **Authentication** | Azure AD, OAuth 2.0 | Must Have |
+
+---
+
+### 5.2 Integration Requirements
+
+| Req ID   | Requirement                 | Protocol / Technology                 | Priority |
+|----------|------------------------------|----------------------------------------|----------|
+| **TR-010** | **External API integration** | REST over HTTPS | Must Have |
+| **TR-011** | **Event-driven architecture** | Azure Event Grid, Service Bus | Should Have |
+| **TR-012** | **File storage** | Azure Blob Storage | Must Have |
+| **TR-013** | **API rate limiting** | 1000 requests/min per client | Should Have |
+
+---
+
+### 5.3 Data Requirements
+
+| Req ID   | Requirement               | Specification                                      | Priority |
+|----------|----------------------------|----------------------------------------------------|----------|
+| **TR-020** | **Database normalization** | 3NF for transactional tables | Must Have |
+| **TR-021** | **Primary keys** | Identity columns (INT) | Must Have |
+| **TR-022** | **Foreign key constraints** | Enforce referential integrity | Must Have |
+| **TR-023** | **Indexes** | Cover frequently queried columns | Must Have |
+| **TR-024** | **Data types** | DECIMAL for currency, DATETIME for timestamps | Must Have |
+| **TR-025** | **NULL handling** | Allow NULLs only where business logic permits | Must Have |
+
+---
+
