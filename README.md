@@ -7,9 +7,7 @@
 - Strategic Execution Office (SEO)
 - Portfolio Delivery System (PDS)
 - Enterprise Execution Framework (EEF)
-
-
-- # Documentation Templates
+- Documentation Templates
 
 A centralized collection of core delivery, governance, and ITSM templates for the **Enterprise Delivery Operating Model (EDOM)**.
 
@@ -107,3 +105,7 @@ A centralized collection of core delivery, governance, and ITSM templates for th
 #### Risk frameworks
 
 
+---
+
+## ⚠️ Disclaimer
+This repository is intended for demonstration, architecture reference, and internal collaboration only. All content—including code, documentation, diagrams, and configuration—is proprietary to Shaila Patel.
